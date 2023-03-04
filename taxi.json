@@ -3,7 +3,7 @@
     "fields" : [ 
                 {
                     "name" : "VendorID",
-                    "type" : "integer",
+                    "type" : "long",
                     "nullable" : true,
                     "metadata" : {"pii": true }
                 }, 
@@ -21,13 +21,19 @@
                 },
                 {
                     "name" : "passenger_count",
-                    "type" : "integer",
+                    "type" : "double",
                     "nullable" : true,
                     "metadata" : {"description": "This is a passenger_count description" }
                 },
                 {
                     "name" : "trip_distance",
-                    "type" : "integer",
+                    "type" : "double",
+                    "nullable" : true,
+                    "metadata" : {"description": "This is a trip_distance description" }
+                },
+                {
+                    "name" : "RatecodeID",
+                    "type" : "double",
                     "nullable" : true,
                     "metadata" : {"description": "This is a trip_distance description" }
                 },
@@ -39,61 +45,73 @@
                 },
                 {
                     "name" : "PULocationID",
-                    "type" : "integer",
+                    "type" : "long",
                     "nullable" : true,
                     "metadata" : {"description": "This is a PULocationID description", "pii": true }
                 },
                 {
                     "name" : "DOLocationID",
-                    "type" : "integer",
+                    "type" : "long",
                     "nullable" : true,
                     "metadata" : {"description": "This is a DOLocationID description", "pii": true }
                 },
                 {
                     "name" : "payment_type",
-                    "type" : "integer",
+                    "type" : "long",
                     "nullable" : true,
                     "metadata" : {"description": "This is a payment_type description", "pii": true }
                 },
                 {
                     "name" : "fare_amount",
-                    "type" : "integer",
+                    "type" : "double",
                     "nullable" : true,
                     "metadata" : {"description": "This is a fare_amount description" }
                 },
                 {
                     "name" : "extra",
-                    "type" : "integer",
+                    "type" : "double",
                     "nullable" : true,
                     "metadata" : {"description": "This is a extra description" }
                 },
                 {
                     "name" : "mta_tax",
-                    "type" : "integer",
+                    "type" : "double",
                     "nullable" : true,
                     "metadata" : {"description": "This is a mta_tax description" }
                 },
                 {
                     "name" : "tip_amount",
-                    "type" : "integer",
+                    "type" : "double",
                     "nullable" : true,
                     "metadata" : {"description": "This is a tip_amount description" }
                 },
                 {
                     "name" : "tolls_amount",
-                    "type" : "integer",
+                    "type" : "double",
                     "nullable" : true,
                     "metadata" : {"description": "This is a tolls_amount description" }
                 },
                 {
                     "name" : "improvement_surcharge",
-                    "type" : "integer",
+                    "type" : "double",
                     "nullable" : true,
                     "metadata" : {"description": "This is a improvement_surcharge description" }
                 },
                 {
                     "name" : "total_amount",
-                    "type" : "integer",
+                    "type" : "double",
+                    "nullable" : true,
+                    "metadata" : {"description": "This is a total_amount description" }
+                },
+                {
+                    "name" : "congestion_surcharge",
+                    "type" : "double",
+                    "nullable" : true,
+                    "metadata" : {"description": "This is a total_amount description" }
+                },
+                {
+                    "name" : "airport_fee",
+                    "type" : "double",
                     "nullable" : true,
                     "metadata" : {"description": "This is a total_amount description" }
                 }
