@@ -37,7 +37,6 @@
       "name" : "salary",
       "type" : "integer",
       "nullable" : true,
-      "metadata" : { }
+      "metadata" : {"description": "This is a dummy description", "pii": true }
     } ]
   }
-  
